@@ -1,0 +1,5 @@
+{
+    "name": "淘宝个人数据抓取",
+    "description": "淘宝个人帐号数据抓取，通过 webview 抓取数据。",
+    "actions": []
+}
