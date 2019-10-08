@@ -1,5 +1,70 @@
 {
     "name": "淘宝个人数据抓取",
     "description": "淘宝个人帐号数据抓取，通过 webview 抓取数据。",
-    "actions": []
-}
+    "actions": [
+      {
+        "name": "淘宝登录",
+        "url": "https://login.m.taobao.com/login.htm",
+        "scripts": [
+          "webflow.lib.js"
+        ],
+        "code": "_mlogin()"
+      },
+      {
+        "name": "个人信息",
+        "url": "https://h5.m.taobao.com/mlapp/mytaobao.html",
+        "scripts": [
+          "webflow.lib.js"
+        ],
+        "code": "_mhome()"
+      },
+      {
+        "name": "基本信息",
+        "url": "https://member1.taobao.com/member/fresh/account_profile.htm",
+        "scripts": [
+          "webflow.lib.js"
+        ],
+        "code": "_mprofile()"
+      },
+      {
+        "name": "安全信息",
+        "url": "https://member1.taobao.com/member/fresh/account_security.htm",
+        "scripts": [
+          "webflow.lib.js"
+        ],
+        "code": "_msecurity()"
+      },
+      {
+        "name": "认证信息",
+        "url": "https://member1.taobao.com/member/fresh/certify_info.htm",
+        "scripts": [
+          "webflow.lib.js"
+        ],
+        "code": "_mcertify()"
+      },
+      {
+        "name": "淘气值",
+        "url": "https://rate.taobao.com/myRate.htm",
+        "scripts": [
+          "webflow.lib.js"
+        ],
+        "code": "_mrate()"
+      },
+      {
+        "name": "收获地址",
+        "url": "https://member1.taobao.com/member/fresh/deliver_address.htm",
+        "scripts": [
+          "webflow.lib.js"
+        ],
+        "code": "_maddress()"
+      },
+      {
+        "name": "订单信息",
+        "url": "https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm",
+        "scripts": [
+          "webflow.lib.js"
+        ],
+        "code": "_morder()"
+      }
+    ]
+  }
